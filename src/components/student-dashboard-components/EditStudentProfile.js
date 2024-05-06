@@ -127,7 +127,7 @@ const EditStudentProfile = () => {
               name="Username"
               value={currentStudent?.Username}
               // onChange={handleChange}
-              required
+              disabled
             />
           </div>
           <div className="form-group">
@@ -137,7 +137,7 @@ const EditStudentProfile = () => {
               className="form-control"
               id="Email"
               name="Email"
-              value={formData.Email}
+              value={formData?.Email}
               onChange={handleChange}
               required
             />
